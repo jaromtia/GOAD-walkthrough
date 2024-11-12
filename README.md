@@ -6,5 +6,5 @@ This lab was set up using [ludus.cloud](https://docs.ludus.cloud). This will hel
 Although there is already a schema for this GOAD environment. I will be treating this as if it is a black box, therefor I will not be referencing any schemas given to me. I will build my own instead
 
 
-## [Reecon](./recon.md)
+## [Recon](./recon.md)
 

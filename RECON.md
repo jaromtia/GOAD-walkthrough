@@ -1,6 +1,8 @@
 # Reconnaisance
 ## Initial Discovery
 
+
+### Netdiscover
 sudo netdiscover -R 10.2.10.0/24
 ```bash
  Currently scanning: Finished!   |   Screen View: Unique Hosts
@@ -18,4 +20,17 @@ sudo netdiscover -R 10.2.10.0/24
 
  ```
 
- nmap 
+### Nmap
+
+[Nmap results](./results/nmap-results.md) (nmap -A -sS -sV -O -p- -T4 --reason -Pn --source-port 4444 10.2.10.10/24)
+
+Explanation of the options:
+- **A**: Enables OS detection, version detection, script scanning, and traceroute.
+- **sS**: Performs a TCP SYN scan (stealth scan).
+- **sV**: Detects service versions.
+- **O**: Enables OS detection.
+- **p**-: Scans all 65535 ports.
+- **T4**: Sets the speed template to a faster scan (T4) while balancing accuracy.
+- **--reason**: Shows the reason Nmap believes a port is open, closed, or filtered.
+- **Pn**: Skips host discovery, assuming all hosts are up.
+- **--source-port 4444**: Sets the source port to 4444, which can sometimes bypass certain firewall rules.
